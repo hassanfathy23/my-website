@@ -1,0 +1,488 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-header {
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: 30px;
+    align-self: center;
+    margin: 0 90px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: 18px;
+    align-items: center;
+    margin-left: 265px;
+}
+
+.nav-list > a {
+    font-family: 'Ubuntu',
+    sans-serif;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-list > a:hover {
+    border-bottom: 4px solid black;
+}
+
+/* .fixed-cta-buttons {
+    list-style: none;
+    width: 70px;
+    padding: 0;
+}
+
+.fixed-cta-buttons > a {
+    width: 50px;
+    height: 50px;
+} */
+
+.pink {
+    color: #A643C9;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin-top: 10px;
+}
+
+.hero-description {
+    width: 50%;
+    padding: 90px;
+    font-family:
+}
+
+.hero-description > h1 {
+    font-family: 'Ubuntu',
+    sans-serif;
+    font-size: 65px;
+}
+
+.hero-description > h4 {
+    font-family: 'roboto',
+    sans-serif;
+    color: #525252;
+    font-size: 20px;
+}
+
+.hero-buttons {
+    font-family: 'Ubuntu',
+    sans-serif;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.what-we-do {
+    background-color: #A643C9;
+    padding: 10px 35px;
+    margin-right: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.what-we-do:hover {
+    background-color: #82339e;
+}
+
+.our-store {
+    border: 3px solid #6e6e6e;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: #6e6e6e;
+    font-size: 22px;
+    cursor: not-allowed;
+}
+
+
+.hero-img {
+    width: 50%;
+    background-image: url(images/hero-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-right: 90px;
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tech {
+    width: 100%;
+    height: 700px;
+    margin-top: 150px;
+    background-image: url(images/transparent-background.png);
+}
+
+.tech > h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-family: 'Ubuntu',
+    sans-serif;
+}
+
+.tech-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 130px;
+    font-size: 22px;
+    height: 500px;
+}
+
+.tech-list-header {
+    text-align: center;
+    font-family: 'roboto',
+    sans-serif;
+}
+
+.tech-front-list,
+.tech-back-list,
+.tech-dev-list {
+    width: 350px;
+    font-family: 'arial',
+    sans-serif;
+
+}
+
+.tech-front-list>li,
+.tech-back-list>li,
+.tech-dev-list>li {
+    padding-block: 10px;
+}
+
+
+.why-section {
+    background-color: #82339e;
+    color: white;
+}
+
+
+.why-section-header {
+    font-family: 'Ubuntu',
+    sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    padding-top: 90px;
+}
+
+
+.first-why-section {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 50px 90px;
+}
+
+.first-why-section-list, .second-why-section-list {
+    font-family: 'roboto',
+    sans-serif;
+    width: 50%;
+    height: 370px;
+    font-size: 25px;
+    padding: 50px 50px 50px 80px;
+}
+
+.first-why-section-list > li, .second-why-section-list > li {
+    padding-block: 30px;
+}
+
+
+.first-why-section-img {
+    width: 40%;
+    background-image: url(images/frustrated-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.second-why-section {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        padding: 50px 130px;
+}
+
+.second-why-section-list {
+    list-style-type: ;
+}
+
+.second-why-section-img {
+    background-image: url(images/frustrated2-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+
+.cta-section {
+    width: 100%;
+    text-align: center;
+    padding: 150px;
+    background-color: #A643C9;
+    color: white;
+}
+
+.cta-section > h1 {
+    font-family: 'Ubuntu',
+    sans-serif;
+    font-size: 55px;
+}
+
+.cta-section > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+    width: 400px;
+    margin: auto;
+
+}
+
+.cta-buttons > a {
+    padding: 10px 30px;
+    color: black;
+    background-color: white;
+    font-family: 'ubuntu',
+    sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+
+.cta-buttons > a:hover {
+    background-color: aliceblue;
+}
+
+.iconify-inline {
+    margin-right: 5px;
+}
+
+.cta-section > p {
+    font-family: 'roboto',
+    sans-serif;
+    width: 650px;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+
+.footer {
+    height: 70px;
+    font-family: 'Ubuntu',
+    sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+             /* about me page */
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.about-header {
+    text-align: center;
+    color: #A643C9;
+    font-family: "ubuntu", sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+
+.about-hero-img {
+    background-image: url(images/Frame\ 3.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    height: 600px;
+    width: 100%;
+    margin-block: 70px;
+}
+
+
+
+.who-am-i {
+    padding: 130px;
+    width: 1200px;
+    margin-left: 50px;
+}
+
+.who-am-i > h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 50px;
+}
+
+
+.who-am-i > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 180%;
+}
+
+.tec-we-use {
+    margin: 180px;
+}
+
+.tec-we-use > h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 50px;
+}
+
+.tec-we-use-list {
+    padding-left: 70px;
+}
+
+.tec-we-use-list > li {
+    padding-block: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.how-i-will {
+    margin: 150px;
+    padding-right: 250px;
+}
+
+.how-i-will > h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.how-i-will-list {
+    padding-left: 100px;
+}
+
+.how-i-will-list > li {
+    padding-block: 20px;
+    font-family: "roboto", sans-serif;
+    font-size: 25px;
+    line-height: 170%;
+}
+
+.contact-hero-img {
+    width: 100%;
+    height: 350px;
+    background-image: url(images/contact-us-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-hero-header{
+    text-align: center;
+    color: #A643C9;
+    font-family: "ubuntu", sans-serif;
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.contact-hero-subheader {
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    font-size: 30px;
+}
+
+.contact-options {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.contact-option-email {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+
+.contact-option-whatsapp {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+
+.contact-iconify {
+    padding-top: 10px;
+    height: 70px;
+}
+
+.contact-option-email, .contact-option-whatsapp {
+  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: rgb(238, 238, 231);
+}
+
+.contact-option-email>h2,
+.contact-option-whatsapp >h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 25px;
+}
+
+.contact-option-email>p,
+.contact-option-whatsapp > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.contact-option-email>a,
+.contact-option-whatsapp > a {
+    font-family: "ubuntu", sans-serif;
+    font-size: 30px;
+    padding: 10px 30px;
+    position: relative;
+    top: 20px;
+    background-color: #A643C9;
+    border-radius: 20px;
+    color: white;
+}
+
+
+.contact-option-email>a:hover,
+.contact-option-whatsapp>a:hover {
+    background-color: #82339e;
+}
+
