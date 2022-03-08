@@ -16,12 +16,18 @@ body {
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
+.nav-img {
+    width: 200px;
+    height: 50px;
+    margin: auto 0 auto 70px;
+}
+
 .nav-header {
     font-family: 'Roboto',
     sans-serif;
     font-size: 30px;
     align-self: center;
-    margin: 0 90px;
+    margin: 0 90px 0 20px;
     cursor: pointer;
 }
 
@@ -32,7 +38,7 @@ body {
     sans-serif;
     font-size: 18px;
     align-items: center;
-    margin-left: 265px;
+    margin-left: 290px;
 }
 
 .nav-list > a {
@@ -72,7 +78,6 @@ body {
 .hero-description {
     width: 50%;
     padding: 90px;
-    font-family:
 }
 
 .hero-description > h1 {
@@ -123,9 +128,9 @@ body {
 
 .hero-img {
     width: 50%;
-    background-image: url(images/hero-img.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url(images/hero-img.png);
+    background-size: cover;
+    background-position: 50% 50%;
     border-radius: 20px;
     margin-right: 90px;
     box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
@@ -212,6 +217,11 @@ body {
     padding-block: 30px;
 }
 
+.second-why-section-list {
+    padding-left: 140px;
+    width: 750px;
+}
+
 
 .first-why-section-img {
     width: 40%;
@@ -229,9 +239,7 @@ body {
         padding: 50px 130px;
 }
 
-.second-why-section-list {
-    list-style-type: ;
-}
+
 
 .second-why-section-img {
     background-image: url(images/frustrated2-img.jpg);
@@ -305,6 +313,190 @@ body {
 }
 
 
+@media screen and (max-width: 992px) {
+   .nav-list {
+       margin-left: 155px;
+}
+
+.hero-description > h1 {
+    font-size: 40px;
+}
+
+.hero-description > h4 {
+    font-size: 16px;
+}
+
+.hero-buttons {
+    flex-direction: column;
+}
+
+.what-we-do, .our-store {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+.second-why-section-list, .first-why-section-list {
+font-size: 20px;
+}
+
+.second-why-section-list {
+    width: 500px;
+    height: 300px;
+    padding-left: 90px;
+}
+
+.first-why-section-img {
+    height: 65%;
+    margin-top: 90px;
+}
+
+.second-why-section-img {
+    width: 50%;
+    height: 65%;
+    margin-top: 90px;
+}
+
+.tech {
+    height: 800px;
+}
+
+.tech > h2 {
+    font-size: 40px;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.tech-list {
+  font-size: 16px;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.tech-list-header {
+    text-align: left;
+    padding-left: 35px;
+}
+
+.cta-section > h1 {
+    font-size: 40px;
+}
+
+.cta-section > p {
+    font-size: 16px;
+}
+
+.cta-buttons > a {
+    font-size: 20px;
+}
+
+.footer {
+    font-size: 16px;
+}
+
+}
+
+
+@media screen and (max-width: 600px){
+
+.navbar {
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .nav-img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+
+ .hero {
+     width: 100%;
+     height: 1000px;
+     flex-direction: column;
+ }
+
+ .hero-description {
+     width: 100%;
+     margin: 10px auto;
+     padding: 40px;
+     text-align: center;
+ }
+
+ .hero-img {
+    height: 100%;
+    width: 100%;
+ }
+
+.first-why-section {
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+}
+
+.first-why-section-list {
+    width: 100%;
+}
+
+.first-why-section-img, .second-why-section-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.second-why-section {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+}
+
+.second-why-section-img {
+    margin-top: 90px;
+}
+
+.tech {
+    height: 1000px;
+    margin: 0;
+}
+
+.tech > h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.tech-list {
+    margin-left: 80px;
+}
+
+.cta-section {
+    padding: 20px;
+}
+
+.cta-section > p {
+    width: 100%;
+    margin: 40px 0;
+}
+
+}
+
+
+
+
+    
+
 
              /* about me page */
 
@@ -312,7 +504,7 @@ body {
 
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
@@ -402,6 +594,20 @@ a {
     line-height: 170%;
 }
 
+
+@media screen and (max-width: 992px) {
+    .who-am-i, .tec-we-use, .how-i-will {
+        width: 100%;
+        padding: 70px;
+        margin: 0;
+    }
+
+    
+
+
+    
+}
+
 .contact-hero-img {
     width: 100%;
     height: 350px;
@@ -484,5 +690,18 @@ a {
 .contact-option-email>a:hover,
 .contact-option-whatsapp>a:hover {
     background-color: #82339e;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-options {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-options {
+        flex-direction: column;
+        height: 800px;
+    }
 }
 
