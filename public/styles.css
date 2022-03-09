@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 .nav-img {
     width: 200px;
     height: 50px;
-    margin: auto 0 auto 70px;
+    margin: auto 0 auto 95px;
 }
 
 .nav-header {
@@ -38,7 +39,8 @@ body {
     sans-serif;
     font-size: 18px;
     align-items: center;
-    margin-left: 290px;
+    margin-left: 255px;
+    overflow: hidden;
 }
 
 .nav-list > a {
@@ -53,16 +55,6 @@ body {
     border-bottom: 4px solid black;
 }
 
-/* .fixed-cta-buttons {
-    list-style: none;
-    width: 70px;
-    padding: 0;
-}
-
-.fixed-cta-buttons > a {
-    width: 50px;
-    height: 50px;
-} */
 
 .pink {
     color: #A643C9;
@@ -80,20 +72,57 @@ body {
     padding: 90px;
 }
 
+@keyframes animation-to-right {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes opacity-animation {
+    from {opacity: 0.3;}
+    to {opacity: 1.0;}
+}
+
+@keyframes animation-to-left {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
 .hero-description > h1 {
+    position: relative;
+    animation-name: animation-to-right, opacity-animation;
+    animation-duration: 1s;
     font-family: 'Ubuntu',
     sans-serif;
     font-size: 65px;
 }
 
 .hero-description > h4 {
+    position: relative;
+    animation-name: animation-to-right, opacity-animation;
+    animation-duration: 1.3s;
     font-family: 'roboto',
     sans-serif;
     color: #525252;
     font-size: 20px;
 }
 
+
+
 .hero-buttons {
+    position: relative;
+    animation-name: animation-to-right,
+    opacity-animation;
+    animation-duration: 1.5s;
     font-family: 'Ubuntu',
     sans-serif;
     display: flex;
@@ -127,6 +156,9 @@ body {
 
 
 .hero-img {
+    position: relative;
+    animation-name: animation-to-left;
+    animation-duration: 0.3s;
     width: 50%;
     background-image: url(images/hero-img.png);
     background-size: cover;
@@ -137,10 +169,13 @@ body {
 }
 
 .tech {
+    animation-name: opacity-animation;
+    animation-duration: 1s;
     width: 100%;
     height: 700px;
     margin-top: 150px;
     background-image: url(images/transparent-background.png);
+    overflow: hidden;
 }
 
 .tech > h2 {
@@ -171,7 +206,6 @@ body {
     width: 350px;
     font-family: 'arial',
     sans-serif;
-
 }
 
 .tech-front-list>li,
@@ -211,6 +245,7 @@ body {
     height: 370px;
     font-size: 25px;
     padding: 50px 50px 50px 80px;
+    overflow: visible;
 }
 
 .first-why-section-list > li, .second-why-section-list > li {
@@ -510,6 +545,8 @@ a {
 
 
 .about-header {
+   animation-name: opacity-animation;
+    animation-duration: 1s;
     text-align: center;
     color: #A643C9;
     font-family: "ubuntu", sans-serif;
@@ -520,6 +557,8 @@ a {
 
 
 .about-hero-img {
+    animation-name: opacity-animation;
+    animation-duration: 1s;
     background-image: url(images/Frame\ 3.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -609,6 +648,8 @@ a {
 }
 
 .contact-hero-img {
+    animation-name: opacity-animation;
+    animation-duration: 1s;
     width: 100%;
     height: 350px;
     background-image: url(images/contact-us-img.png);
@@ -617,6 +658,8 @@ a {
 }
 
 .contact-hero-header{
+    animation-name: opacity-animation;
+    animation-duration: 1s;
     text-align: center;
     color: #A643C9;
     font-family: "ubuntu", sans-serif;
@@ -625,6 +668,8 @@ a {
 }
 
 .contact-hero-subheader {
+    animation-name: opacity-animation;
+    animation-duration: 1s;
     text-align: center;
     font-family: "roboto", sans-serif;
     font-size: 30px;
